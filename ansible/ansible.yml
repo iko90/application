@@ -1,14 +1,13 @@
 - name: exzample
   gather_facts: false
   hosts: [all]
-  become: yes
 
   tasks:
 
     - name: Create conteiner
       docker_container:
         name: indexwork
-        image: iko90/indexwork:latest
+        image: iko90/indexwork
         pull: true
         state: started
         ports:
