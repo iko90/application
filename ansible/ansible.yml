@@ -1,6 +1,7 @@
 - name: exzample
   gather_facts: false
   hosts: [all]
+  become: yes
 
   tasks:
 
